@@ -1,0 +1,303 @@
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\ApplicationInsights.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\csc.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\vbc.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.dll.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Antlr3.Runtime.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Newtonsoft.Json.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Helpers.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Mvc.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Optimization.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Razor.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\WebGrease.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Helpers.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Mvc.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Optimization.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.Razor.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Antlr3.Runtime.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Newtonsoft.Json.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Razor.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\EntityFramework.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\Projet\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\csc.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\vbc.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\ApplicationInsights.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.dll.config
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\TexcelASP.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Antlr3.Runtime.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Newtonsoft.Json.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Owin.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Helpers.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Mvc.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Optimization.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Razor.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\WebGrease.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Helpers.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Mvc.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Optimization.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.Razor.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Antlr3.Runtime.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Newtonsoft.Json.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.Razor.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\EntityFramework.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.dll
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet Final\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.pdb
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\ApplicationInsights.config
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\csc.exe
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\vbc.exe
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\TexcelASP.dll.config
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\TexcelASP.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\TexcelASP.pdb
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Antlr3.Runtime.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\EntityFramework.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Newtonsoft.Json.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Owin.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Helpers.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Mvc.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Optimization.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Razor.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\WebGrease.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.Web.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.ApplicationInsights.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Helpers.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Mvc.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Optimization.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.Razor.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\System.Web.WebPages.Razor.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Antlr3.Runtime.pdb
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Newtonsoft.Json.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\EntityFramework.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\EntityFramework.SqlServer.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.Razor.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\EntityFramework.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\obj\Debug\TexcelASP.dll
+C:\Users\utilisateur\Desktop\TexcelASP\TexcelASP\obj\Debug\TexcelASP.pdb

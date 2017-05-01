@@ -1,0 +1,82 @@
+﻿@model TexcelASP.Models.Jeu
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Jeu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.configMinimal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.configMinimal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Classification1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Classification1.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Developpeur1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Developpeur1.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre1.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Platforme1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Platforme1.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Theme1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Theme1.nom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

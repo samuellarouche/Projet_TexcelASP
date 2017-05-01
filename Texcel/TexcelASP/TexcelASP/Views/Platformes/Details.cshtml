@@ -1,0 +1,50 @@
+﻿@model TexcelASP.Models.Platforme
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Platforme</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.configuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.configuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SystemeExploitation1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SystemeExploitation1.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypePlatforme1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypePlatforme1.nom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

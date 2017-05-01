@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TexcelASP_SamNicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CategorieEmploi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Employe" Relationship="Self.FK_Employe_CategorieEmploi" FromRole="CategorieEmploi" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Classification">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Classification" FromRole="Classification" ToRole="Jeu" />
+  </EntityType>
+  <EntityType Name="Developpeur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Developpeur" FromRole="Developpeur" ToRole="Jeu" />
+  </EntityType>
+  <EntityType Name="Employe">
+    <Key>
+      <PropertyRef Name="matricule" />
+    </Key>
+    <Property Name="matricule" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mdp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prenom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dateNaissance" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telResidentiel" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="categorieEmploi" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CategorieEmploi1" Relationship="Self.FK_Employe_CategorieEmploi" FromRole="Employe" ToRole="CategorieEmploi" />
+  </EntityType>
+  <EntityType Name="Equipe">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="chefEquipe" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EquipeEmploye">
+    <Key>
+      <PropertyRef Name="equipe" />
+      <PropertyRef Name="employe" />
+    </Key>
+    <Property Name="equipe" Type="Int32" Nullable="false" />
+    <Property Name="employe" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Genre" FromRole="Genre" ToRole="Jeu" />
+  </EntityType>
+  <EntityType Name="Jeu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="configMinimal" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="genre" Type="Int32" Nullable="false" />
+    <Property Name="theme" Type="Int32" Nullable="false" />
+    <Property Name="classification" Type="Int32" Nullable="false" />
+    <Property Name="developpeur" Type="Int32" Nullable="false" />
+    <Property Name="platforme" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Classification1" Relationship="Self.FK_Jeu_Classification" FromRole="Jeu" ToRole="Classification" />
+    <NavigationProperty Name="Developpeur1" Relationship="Self.FK_Jeu_Developpeur" FromRole="Jeu" ToRole="Developpeur" />
+    <NavigationProperty Name="Genre1" Relationship="Self.FK_Jeu_Genre" FromRole="Jeu" ToRole="Genre" />
+    <NavigationProperty Name="Platforme1" Relationship="Self.FK_Jeu_Platforme" FromRole="Jeu" ToRole="Platforme" />
+    <NavigationProperty Name="Theme1" Relationship="Self.FK_Jeu_Theme" FromRole="Jeu" ToRole="Theme" />
+    <NavigationProperty Name="Jeu1" Relationship="Self.JeuAssociee" FromRole="Jeu" ToRole="Jeu1" />
+    <NavigationProperty Name="Jeu2" Relationship="Self.JeuAssociee" FromRole="Jeu1" ToRole="Jeu" />
+  </EntityType>
+  <EntityType Name="Platforme">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="configuration" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="typePlatforme" Type="Int32" Nullable="false" />
+    <Property Name="systemeExploitation" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Platforme" FromRole="Platforme" ToRole="Jeu" />
+    <NavigationProperty Name="SystemeExploitation1" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="Platforme" ToRole="SystemeExploitation" />
+    <NavigationProperty Name="TypePlatforme1" Relationship="Self.FK_Platforme_TypePlatforme" FromRole="Platforme" ToRole="TypePlatforme" />
+  </EntityType>
+  <EntityType Name="ProjetTest">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="jeu" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemeExploitation">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Platforme" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="SystemeExploitation" ToRole="Platforme" />
+  </EntityType>
+  <EntityType Name="Test">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="completion" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Theme">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Theme" FromRole="Theme" ToRole="Jeu" />
+  </EntityType>
+  <EntityType Name="TypePlatforme">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Platforme" Relationship="Self.FK_Platforme_TypePlatforme" FromRole="TypePlatforme" ToRole="Platforme" />
+  </EntityType>
+  <EntityType Name="TypeTest">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewDeveloppeur">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewEmploye">
+    <Key>
+      <PropertyRef Name="matricule" />
+      <PropertyRef Name="mdp" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="prenom" />
+      <PropertyRef Name="dateNaissance" />
+      <PropertyRef Name="adresse" />
+      <PropertyRef Name="telResidentiel" />
+      <PropertyRef Name="posteTel" />
+      <PropertyRef Name="categorieEmploi" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="matricule" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mdp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prenom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dateNaissance" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telResidentiel" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="categorieEmploi" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tag" Type="String" MaxLength="193" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewGenre">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewJeu">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="description" />
+      <PropertyRef Name="genre" />
+      <PropertyRef Name="theme" />
+      <PropertyRef Name="classification" />
+      <PropertyRef Name="developpeur" />
+      <PropertyRef Name="platforme" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="configMinimal" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="genre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="theme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="classification" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="developpeur" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="platforme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tag" Type="String" MaxLength="544" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewPlatforme">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="typePlatforme" />
+      <PropertyRef Name="systemeExploitation" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="configuration" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="typePlatforme" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="systemeExploitation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tag" Type="String" MaxLength="270" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewSystemeExploitation">
+    <Key>
+      <PropertyRef Name="code" />
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="version" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="code" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tag" Type="String" MaxLength="71" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewTheme">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewTypePlatforme">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nom" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Employe_CategorieEmploi">
+    <End Role="CategorieEmploi" Type="Self.CategorieEmploi" Multiplicity="1" />
+    <End Role="Employe" Type="Self.Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieEmploi">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="categorieEmploi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeu_Classification">
+    <End Role="Classification" Type="Self.Classification" Multiplicity="1" />
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classification">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeu">
+        <PropertyRef Name="classification" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeu_Developpeur">
+    <End Role="Developpeur" Type="Self.Developpeur" Multiplicity="1" />
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Developpeur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeu">
+        <PropertyRef Name="developpeur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeu_Genre">
+    <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeu">
+        <PropertyRef Name="genre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeu_Platforme">
+    <End Role="Platforme" Type="Self.Platforme" Multiplicity="1" />
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Platforme">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeu">
+        <PropertyRef Name="platforme" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeu_Theme">
+    <End Role="Theme" Type="Self.Theme" Multiplicity="1" />
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Theme">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeu">
+        <PropertyRef Name="theme" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Platforme_SystemeExploitation">
+    <End Role="SystemeExploitation" Type="Self.SystemeExploitation" Multiplicity="1" />
+    <End Role="Platforme" Type="Self.Platforme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemeExploitation">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="Platforme">
+        <PropertyRef Name="systemeExploitation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Platforme_TypePlatforme">
+    <End Role="TypePlatforme" Type="Self.TypePlatforme" Multiplicity="1" />
+    <End Role="Platforme" Type="Self.Platforme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypePlatforme">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Platforme">
+        <PropertyRef Name="typePlatforme" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="JeuAssociee">
+    <End Role="Jeu" Type="Self.Jeu" Multiplicity="*" />
+    <End Role="Jeu1" Type="Self.Jeu" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TexcelASP_SamNicEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CategorieEmploi" EntityType="Self.CategorieEmploi" />
+    <EntitySet Name="Classification" EntityType="Self.Classification" />
+    <EntitySet Name="Developpeur" EntityType="Self.Developpeur" />
+    <EntitySet Name="Employe" EntityType="Self.Employe" />
+    <EntitySet Name="Equipe" EntityType="Self.Equipe" />
+    <EntitySet Name="EquipeEmploye" EntityType="Self.EquipeEmploye" />
+    <EntitySet Name="Genre" EntityType="Self.Genre" />
+    <EntitySet Name="Jeu" EntityType="Self.Jeu" />
+    <EntitySet Name="Platforme" EntityType="Self.Platforme" />
+    <EntitySet Name="ProjetTest" EntityType="Self.ProjetTest" />
+    <EntitySet Name="SystemeExploitation" EntityType="Self.SystemeExploitation" />
+    <EntitySet Name="Test" EntityType="Self.Test" />
+    <EntitySet Name="Theme" EntityType="Self.Theme" />
+    <EntitySet Name="TypePlatforme" EntityType="Self.TypePlatforme" />
+    <EntitySet Name="TypeTest" EntityType="Self.TypeTest" />
+    <EntitySet Name="ViewDeveloppeur" EntityType="Self.ViewDeveloppeur" />
+    <EntitySet Name="ViewEmploye" EntityType="Self.ViewEmploye" />
+    <EntitySet Name="ViewGenre" EntityType="Self.ViewGenre" />
+    <EntitySet Name="ViewJeu" EntityType="Self.ViewJeu" />
+    <EntitySet Name="ViewPlatforme" EntityType="Self.ViewPlatforme" />
+    <EntitySet Name="ViewSystemeExploitation" EntityType="Self.ViewSystemeExploitation" />
+    <EntitySet Name="ViewTheme" EntityType="Self.ViewTheme" />
+    <EntitySet Name="ViewTypePlatforme" EntityType="Self.ViewTypePlatforme" />
+    <AssociationSet Name="FK_Employe_CategorieEmploi" Association="Self.FK_Employe_CategorieEmploi">
+      <End Role="CategorieEmploi" EntitySet="CategorieEmploi" />
+      <End Role="Employe" EntitySet="Employe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeu_Classification" Association="Self.FK_Jeu_Classification">
+      <End Role="Classification" EntitySet="Classification" />
+      <End Role="Jeu" EntitySet="Jeu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeu_Developpeur" Association="Self.FK_Jeu_Developpeur">
+      <End Role="Developpeur" EntitySet="Developpeur" />
+      <End Role="Jeu" EntitySet="Jeu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeu_Genre" Association="Self.FK_Jeu_Genre">
+      <End Role="Genre" EntitySet="Genre" />
+      <End Role="Jeu" EntitySet="Jeu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeu_Platforme" Association="Self.FK_Jeu_Platforme">
+      <End Role="Platforme" EntitySet="Platforme" />
+      <End Role="Jeu" EntitySet="Jeu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeu_Theme" Association="Self.FK_Jeu_Theme">
+      <End Role="Theme" EntitySet="Theme" />
+      <End Role="Jeu" EntitySet="Jeu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Platforme_SystemeExploitation" Association="Self.FK_Platforme_SystemeExploitation">
+      <End Role="SystemeExploitation" EntitySet="SystemeExploitation" />
+      <End Role="Platforme" EntitySet="Platforme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Platforme_TypePlatforme" Association="Self.FK_Platforme_TypePlatforme">
+      <End Role="TypePlatforme" EntitySet="TypePlatforme" />
+      <End Role="Platforme" EntitySet="Platforme" />
+    </AssociationSet>
+    <AssociationSet Name="JeuAssociee" Association="Self.JeuAssociee">
+      <End Role="Jeu" EntitySet="Jeu" />
+      <End Role="Jeu1" EntitySet="Jeu" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
