@@ -30,8 +30,8 @@ GO
 CREATE TABLE Genre
 (
 	id					int					NOT NULL	IDENTITY(1,1),	
-	
-	nom					varchar(30)			NOT NULL
+	nom					varchar(30)			NOT NULL,
+	tag					varchar(200)		NULL
 
 	CONSTRAINT PK_Genre_id PRIMARY KEY CLUSTERED (id)
 ) ON [PRIMARY]
@@ -47,8 +47,8 @@ GO
 CREATE TABLE Theme
 (
 	id					int					NOT NULL	IDENTITY(1,1),	
-	
-	nom					varchar(30)			NOT NULL
+	nom					varchar(30)			NOT NULL,
+	tag					varchar(200)		NULL
 
 	CONSTRAINT PK_Theme_id PRIMARY KEY CLUSTERED (id)
 ) ON [PRIMARY]
@@ -64,8 +64,8 @@ GO
 CREATE TABLE Classification
 (
 	id					int					NOT NULL	IDENTITY(1,1),	
-	
-	nom					varchar(4)			NOT NULL
+	nom					varchar(4)			NOT NULL,
+	tag					varchar(200)		NULL
 
 	CONSTRAINT PK_Classification_id PRIMARY KEY CLUSTERED (id)
 ) ON [PRIMARY]
@@ -81,8 +81,8 @@ GO
 CREATE TABLE Developpeur
 (
 	id					int					NOT NULL	IDENTITY(1,1),	
-	
-	nom					varchar(30)			NOT NULL
+	nom					varchar(30)			NOT NULL,
+	tag					varchar(200)		NULL
 
 	CONSTRAINT PK_Developpeur_id PRIMARY KEY CLUSTERED (id)
 ) ON [PRIMARY]
@@ -98,10 +98,10 @@ GO
 CREATE TABLE SystemeExploitation
 (
 	code				varchar(11)			NOT NULL,
-	
 	nom					varchar(20)			NOT NULL,
 	edition				varchar(20)			NULL,
-	version				varchar(20)			NOT NULL
+	version				varchar(20)			NOT NULL,
+	tag					varchar(200)		NULL
 
 	CONSTRAINT PK_SystemeExploitation_id PRIMARY KEY CLUSTERED (code)
 ) ON [PRIMARY]
@@ -118,7 +118,7 @@ CREATE TABLE TypePlatforme
 (
 	id					int					NOT NULL	IDENTITY(1,1),	
 	
-	nom					varchar(20)			NOT NULL
+	nom					varchar(20)			NOT NULL,
 
 	CONSTRAINT PK_TypePlatforme_id PRIMARY KEY CLUSTERED (id)
 ) ON [PRIMARY]
@@ -137,6 +137,7 @@ CREATE TABLE Platforme
 	
 	nom					varchar(30)			NOT NULL,
 	configuration		varchar(200)		NULL,
+	tag					varchar(200)		NULL,
 
 	typePlatforme		int					NOT NULL,	--FK
 	systemeExploitation	varchar(11)			NOT NULL	--FK
@@ -159,6 +160,7 @@ CREATE TABLE Jeu
 	nom					varchar(50)			NOT NULL,
 	description			varchar(200)		NOT NULL,
 	configMinimal		varchar(200)		NULL,
+	tag					varchar(400)		NULL,
 
 	genre				int					NOT NULL,	--FK
 	theme				int					NOT NULL,	--FK
@@ -220,6 +222,7 @@ CREATE TABLE Employe
 	adresse				varchar(50)			NOT NULL,
 	telResidentiel		char(12)			NOT NULL,
 	posteTel			char(3)				NOT NULL,
+	tag					varchar(200)		NULL,
 
 	categorieEmploi		int					NOT NULL,	--FK
 
