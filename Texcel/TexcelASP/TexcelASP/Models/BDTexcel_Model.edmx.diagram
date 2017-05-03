@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c13ce3d3884e4b00aa105f1d047caec7" Name="Diagram1">
+      <Diagram DiagramId="c13ce3d3884e4b00aa105f1d047caec7" Name="Diagram1" ZoomLevel="74">
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.CategorieEmploi" Width="1.5" PointX="5.75" PointY="9.125" IsExpanded="true" />
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.Classification" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.Developpeur" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
@@ -20,14 +20,6 @@
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.Theme" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.TypePlatforme" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TexcelASP_SamNicModel.TypeTest" Width="1.5" PointX="5.75" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewDeveloppeur" Width="1.5" PointX="10.75" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewEmploye" Width="1.5" PointX="7.75" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewGenre" Width="1.5" PointX="10.75" PointY="11.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewJeu" Width="1.5" PointX="11.75" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewPlatforme" Width="1.5" PointX="12.75" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewSystemeExploitation" Width="1.5" PointX="12.75" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewTheme" Width="1.5" PointX="9.75" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TexcelASP_SamNicModel.ViewTypePlatforme" Width="1.5" PointX="12.75" PointY="12.25" IsExpanded="true" />
         <AssociationConnector Association="TexcelASP_SamNicModel.FK_Employe_CategorieEmploi" ManuallyRouted="false" />
         <AssociationConnector Association="TexcelASP_SamNicModel.FK_Jeu_Classification" ManuallyRouted="false" />
         <AssociationConnector Association="TexcelASP_SamNicModel.FK_Jeu_Developpeur" ManuallyRouted="false" />

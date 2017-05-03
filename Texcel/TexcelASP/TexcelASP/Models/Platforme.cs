@@ -25,6 +25,7 @@ namespace TexcelASP.Models
         public string configuration { get; set; }
         public int typePlatforme { get; set; }
         public string systemeExploitation { get; set; }
+        public string tag { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Jeu> Jeu { get; set; }

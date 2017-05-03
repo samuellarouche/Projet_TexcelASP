@@ -23,6 +23,7 @@ namespace TexcelASP.Models
         public string telResidentiel { get; set; }
         public string posteTel { get; set; }
         public int categorieEmploi { get; set; }
+        public string tag { get; set; }
     
         public virtual CategorieEmploi CategorieEmploi1 { get; set; }
     }

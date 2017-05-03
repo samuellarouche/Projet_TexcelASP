@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TexcelASP_SamNicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TexcelASP_SamNicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CategorieEmploi">
           <Key>
             <PropertyRef Name="id" />
@@ -18,6 +18,7 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Developpeur">
           <Key>
@@ -25,6 +26,7 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Employe">
           <Key>
@@ -38,6 +40,7 @@
           <Property Name="adresse" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="telResidentiel" Type="char" MaxLength="12" Nullable="false" />
           <Property Name="posteTel" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
           <Property Name="categorieEmploi" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Equipe">
@@ -61,6 +64,7 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Jeu">
           <Key>
@@ -70,6 +74,7 @@
           <Property Name="nom" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="description" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="configMinimal" Type="varchar" MaxLength="200" />
+          <Property Name="tag" Type="varchar" MaxLength="400" />
           <Property Name="genre" Type="int" Nullable="false" />
           <Property Name="theme" Type="int" Nullable="false" />
           <Property Name="classification" Type="int" Nullable="false" />
@@ -91,6 +96,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="configuration" Type="varchar" MaxLength="200" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
           <Property Name="typePlatforme" Type="int" Nullable="false" />
           <Property Name="systemeExploitation" Type="varchar" MaxLength="11" Nullable="false" />
         </EntityType>
@@ -109,6 +115,7 @@
           <Property Name="nom" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="edition" Type="varchar" MaxLength="20" />
           <Property Name="version" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Test">
           <Key>
@@ -124,6 +131,7 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="TypePlatforme">
           <Key>
@@ -135,129 +143,6 @@
         <EntityType Name="TypeTest">
           <Key>
             <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="20" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewDeveloppeur' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewDeveloppeur">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewEmploye' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewEmploye">
-          <Key>
-            <PropertyRef Name="matricule" />
-            <PropertyRef Name="mdp" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="prenom" />
-            <PropertyRef Name="dateNaissance" />
-            <PropertyRef Name="adresse" />
-            <PropertyRef Name="telResidentiel" />
-            <PropertyRef Name="posteTel" />
-            <PropertyRef Name="categorieEmploi" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="matricule" Type="char" MaxLength="8" Nullable="false" />
-          <Property Name="mdp" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="prenom" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="dateNaissance" Type="date" Nullable="false" />
-          <Property Name="adresse" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="telResidentiel" Type="char" MaxLength="12" Nullable="false" />
-          <Property Name="posteTel" Type="char" MaxLength="3" Nullable="false" />
-          <Property Name="categorieEmploi" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="tag" Type="varchar" MaxLength="193" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewGenre' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewGenre">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewJeu' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewJeu">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="description" />
-            <PropertyRef Name="genre" />
-            <PropertyRef Name="theme" />
-            <PropertyRef Name="classification" />
-            <PropertyRef Name="developpeur" />
-            <PropertyRef Name="platforme" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="description" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="configMinimal" Type="varchar" MaxLength="200" />
-          <Property Name="genre" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="theme" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="classification" Type="varchar" MaxLength="4" Nullable="false" />
-          <Property Name="developpeur" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="platforme" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="tag" Type="varchar" MaxLength="544" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewPlatforme' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewPlatforme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="typePlatforme" />
-            <PropertyRef Name="systemeExploitation" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="configuration" Type="varchar" MaxLength="200" />
-          <Property Name="typePlatforme" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="systemeExploitation" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="tag" Type="varchar" MaxLength="270" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewSystemeExploitation' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewSystemeExploitation">
-          <Key>
-            <PropertyRef Name="code" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="version" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="code" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="edition" Type="varchar" MaxLength="20" />
-          <Property Name="version" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="tag" Type="varchar" MaxLength="71" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTheme' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewTheme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nom" Type="varchar" MaxLength="30" Nullable="false" />
-        </EntityType>
-        <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
-        <EntityType Name="ViewTypePlatforme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nom" Type="varchar" MaxLength="20" Nullable="false" />
@@ -399,77 +284,6 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySet Name="Theme" EntityType="Self.Theme" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TypePlatforme" EntityType="Self.TypePlatforme" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TypeTest" EntityType="Self.TypeTest" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ViewDeveloppeur" EntityType="Self.ViewDeveloppeur" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewDeveloppeur].[id] AS [id], 
-    [ViewDeveloppeur].[nom] AS [nom]
-    FROM [dbo].[ViewDeveloppeur] AS [ViewDeveloppeur]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewEmploye" EntityType="Self.ViewEmploye" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewEmploye].[matricule] AS [matricule], 
-    [ViewEmploye].[mdp] AS [mdp], 
-    [ViewEmploye].[nom] AS [nom], 
-    [ViewEmploye].[prenom] AS [prenom], 
-    [ViewEmploye].[dateNaissance] AS [dateNaissance], 
-    [ViewEmploye].[adresse] AS [adresse], 
-    [ViewEmploye].[telResidentiel] AS [telResidentiel], 
-    [ViewEmploye].[posteTel] AS [posteTel], 
-    [ViewEmploye].[categorieEmploi] AS [categorieEmploi], 
-    [ViewEmploye].[tag] AS [tag]
-    FROM [dbo].[ViewEmploye] AS [ViewEmploye]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewGenre" EntityType="Self.ViewGenre" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewGenre].[id] AS [id], 
-    [ViewGenre].[nom] AS [nom]
-    FROM [dbo].[ViewGenre] AS [ViewGenre]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewJeu" EntityType="Self.ViewJeu" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewJeu].[id] AS [id], 
-    [ViewJeu].[nom] AS [nom], 
-    [ViewJeu].[description] AS [description], 
-    [ViewJeu].[configMinimal] AS [configMinimal], 
-    [ViewJeu].[genre] AS [genre], 
-    [ViewJeu].[theme] AS [theme], 
-    [ViewJeu].[classification] AS [classification], 
-    [ViewJeu].[developpeur] AS [developpeur], 
-    [ViewJeu].[platforme] AS [platforme], 
-    [ViewJeu].[tag] AS [tag]
-    FROM [dbo].[ViewJeu] AS [ViewJeu]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewPlatforme" EntityType="Self.ViewPlatforme" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewPlatforme].[id] AS [id], 
-    [ViewPlatforme].[nom] AS [nom], 
-    [ViewPlatforme].[configuration] AS [configuration], 
-    [ViewPlatforme].[typePlatforme] AS [typePlatforme], 
-    [ViewPlatforme].[systemeExploitation] AS [systemeExploitation], 
-    [ViewPlatforme].[tag] AS [tag]
-    FROM [dbo].[ViewPlatforme] AS [ViewPlatforme]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewSystemeExploitation" EntityType="Self.ViewSystemeExploitation" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewSystemeExploitation].[code] AS [code], 
-    [ViewSystemeExploitation].[nom] AS [nom], 
-    [ViewSystemeExploitation].[edition] AS [edition], 
-    [ViewSystemeExploitation].[version] AS [version], 
-    [ViewSystemeExploitation].[tag] AS [tag]
-    FROM [dbo].[ViewSystemeExploitation] AS [ViewSystemeExploitation]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewTheme" EntityType="Self.ViewTheme" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewTheme].[id] AS [id], 
-    [ViewTheme].[nom] AS [nom]
-    FROM [dbo].[ViewTheme] AS [ViewTheme]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ViewTypePlatforme" EntityType="Self.ViewTypePlatforme" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ViewTypePlatforme].[id] AS [id], 
-    [ViewTypePlatforme].[nom] AS [nom]
-    FROM [dbo].[ViewTypePlatforme] AS [ViewTypePlatforme]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_Employe_CategorieEmploi" Association="Self.FK_Employe_CategorieEmploi">
             <End Role="CategorieEmploi" EntitySet="CategorieEmploi" />
             <End Role="Employe" EntitySet="Employe" />
@@ -511,8 +325,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
             <End Role="Platforme" EntitySet="Platforme" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TexcelASP_SamNicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -531,6 +344,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nom" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Classification" FromRole="Classification" ToRole="Jeu" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Developpeur">
           <Key>
@@ -539,6 +353,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Developpeur" FromRole="Developpeur" ToRole="Jeu" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Employe">
           <Key>
@@ -554,6 +369,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="categorieEmploi" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CategorieEmploi1" Relationship="Self.FK_Employe_CategorieEmploi" FromRole="Employe" ToRole="CategorieEmploi" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Equipe">
           <Key>
@@ -577,6 +393,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Genre" FromRole="Genre" ToRole="Jeu" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Jeu">
           <Key>
@@ -598,6 +415,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <NavigationProperty Name="Theme1" Relationship="Self.FK_Jeu_Theme" FromRole="Jeu" ToRole="Theme" />
           <NavigationProperty Name="Jeu1" Relationship="Self.JeuAssociee" FromRole="Jeu" ToRole="Jeu1" />
           <NavigationProperty Name="Jeu2" Relationship="Self.JeuAssociee" FromRole="Jeu1" ToRole="Jeu" />
+          <Property Name="tag" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Platforme">
           <Key>
@@ -611,6 +429,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Platforme" FromRole="Platforme" ToRole="Jeu" />
           <NavigationProperty Name="SystemeExploitation1" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="Platforme" ToRole="SystemeExploitation" />
           <NavigationProperty Name="TypePlatforme1" Relationship="Self.FK_Platforme_TypePlatforme" FromRole="Platforme" ToRole="TypePlatforme" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="ProjetTest">
           <Key>
@@ -628,6 +447,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Platforme" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="SystemeExploitation" ToRole="Platforme" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Test">
           <Key>
@@ -644,6 +464,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Theme" FromRole="Theme" ToRole="Jeu" />
+          <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TypePlatforme">
           <Key>
@@ -656,113 +477,6 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
         <EntityType Name="TypeTest">
           <Key>
             <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewDeveloppeur">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewEmploye">
-          <Key>
-            <PropertyRef Name="matricule" />
-            <PropertyRef Name="mdp" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="prenom" />
-            <PropertyRef Name="dateNaissance" />
-            <PropertyRef Name="adresse" />
-            <PropertyRef Name="telResidentiel" />
-            <PropertyRef Name="posteTel" />
-            <PropertyRef Name="categorieEmploi" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="matricule" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="mdp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="prenom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="dateNaissance" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="telResidentiel" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="categorieEmploi" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="tag" Type="String" MaxLength="193" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewGenre">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewJeu">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="description" />
-            <PropertyRef Name="genre" />
-            <PropertyRef Name="theme" />
-            <PropertyRef Name="classification" />
-            <PropertyRef Name="developpeur" />
-            <PropertyRef Name="platforme" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="configMinimal" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="genre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="theme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="classification" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="developpeur" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="platforme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="tag" Type="String" MaxLength="544" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewPlatforme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="typePlatforme" />
-            <PropertyRef Name="systemeExploitation" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="configuration" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="typePlatforme" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="systemeExploitation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="tag" Type="String" MaxLength="270" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewSystemeExploitation">
-          <Key>
-            <PropertyRef Name="code" />
-            <PropertyRef Name="nom" />
-            <PropertyRef Name="version" />
-            <PropertyRef Name="tag" />
-          </Key>
-          <Property Name="code" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="tag" Type="String" MaxLength="71" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewTheme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ViewTypePlatforme">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="nom" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
@@ -883,14 +597,6 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySet Name="Theme" EntityType="Self.Theme" />
           <EntitySet Name="TypePlatforme" EntityType="Self.TypePlatforme" />
           <EntitySet Name="TypeTest" EntityType="Self.TypeTest" />
-          <EntitySet Name="ViewDeveloppeur" EntityType="Self.ViewDeveloppeur" />
-          <EntitySet Name="ViewEmploye" EntityType="Self.ViewEmploye" />
-          <EntitySet Name="ViewGenre" EntityType="Self.ViewGenre" />
-          <EntitySet Name="ViewJeu" EntityType="Self.ViewJeu" />
-          <EntitySet Name="ViewPlatforme" EntityType="Self.ViewPlatforme" />
-          <EntitySet Name="ViewSystemeExploitation" EntityType="Self.ViewSystemeExploitation" />
-          <EntitySet Name="ViewTheme" EntityType="Self.ViewTheme" />
-          <EntitySet Name="ViewTypePlatforme" EntityType="Self.ViewTypePlatforme" />
           <AssociationSet Name="FK_Employe_CategorieEmploi" Association="Self.FK_Employe_CategorieEmploi">
             <End Role="CategorieEmploi" EntitySet="CategorieEmploi" />
             <End Role="Employe" EntitySet="Employe" />
@@ -945,6 +651,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Classification">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Classification">
               <MappingFragment StoreEntitySet="Classification">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
               </MappingFragment>
@@ -953,6 +660,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Developpeur">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Developpeur">
               <MappingFragment StoreEntitySet="Developpeur">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
               </MappingFragment>
@@ -961,6 +669,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Employe">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Employe">
               <MappingFragment StoreEntitySet="Employe">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="matricule" ColumnName="matricule" />
                 <ScalarProperty Name="mdp" ColumnName="mdp" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
@@ -992,6 +701,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Genre">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Genre">
               <MappingFragment StoreEntitySet="Genre">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
               </MappingFragment>
@@ -1000,6 +710,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Jeu">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Jeu">
               <MappingFragment StoreEntitySet="Jeu">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
                 <ScalarProperty Name="description" ColumnName="description" />
@@ -1015,6 +726,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Platforme">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Platforme">
               <MappingFragment StoreEntitySet="Platforme">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
                 <ScalarProperty Name="configuration" ColumnName="configuration" />
@@ -1034,6 +746,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="SystemeExploitation">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.SystemeExploitation">
               <MappingFragment StoreEntitySet="SystemeExploitation">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="code" ColumnName="code" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
                 <ScalarProperty Name="edition" ColumnName="edition" />
@@ -1053,6 +766,7 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="Theme">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.Theme">
               <MappingFragment StoreEntitySet="Theme">
+                <ScalarProperty Name="tag" ColumnName="tag" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
               </MappingFragment>
@@ -1069,93 +783,6 @@ avertissement 6002: La table/vue 'TexcelASP_SamNic.dbo.ViewTypePlatforme' n'a pa
           <EntitySetMapping Name="TypeTest">
             <EntityTypeMapping TypeName="TexcelASP_SamNicModel.TypeTest">
               <MappingFragment StoreEntitySet="TypeTest">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewDeveloppeur">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewDeveloppeur">
-              <MappingFragment StoreEntitySet="ViewDeveloppeur">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewEmploye">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewEmploye">
-              <MappingFragment StoreEntitySet="ViewEmploye">
-                <ScalarProperty Name="matricule" ColumnName="matricule" />
-                <ScalarProperty Name="mdp" ColumnName="mdp" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-                <ScalarProperty Name="prenom" ColumnName="prenom" />
-                <ScalarProperty Name="dateNaissance" ColumnName="dateNaissance" />
-                <ScalarProperty Name="adresse" ColumnName="adresse" />
-                <ScalarProperty Name="telResidentiel" ColumnName="telResidentiel" />
-                <ScalarProperty Name="posteTel" ColumnName="posteTel" />
-                <ScalarProperty Name="categorieEmploi" ColumnName="categorieEmploi" />
-                <ScalarProperty Name="tag" ColumnName="tag" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewGenre">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewGenre">
-              <MappingFragment StoreEntitySet="ViewGenre">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewJeu">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewJeu">
-              <MappingFragment StoreEntitySet="ViewJeu">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-                <ScalarProperty Name="description" ColumnName="description" />
-                <ScalarProperty Name="configMinimal" ColumnName="configMinimal" />
-                <ScalarProperty Name="genre" ColumnName="genre" />
-                <ScalarProperty Name="theme" ColumnName="theme" />
-                <ScalarProperty Name="classification" ColumnName="classification" />
-                <ScalarProperty Name="developpeur" ColumnName="developpeur" />
-                <ScalarProperty Name="platforme" ColumnName="platforme" />
-                <ScalarProperty Name="tag" ColumnName="tag" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewPlatforme">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewPlatforme">
-              <MappingFragment StoreEntitySet="ViewPlatforme">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-                <ScalarProperty Name="configuration" ColumnName="configuration" />
-                <ScalarProperty Name="typePlatforme" ColumnName="typePlatforme" />
-                <ScalarProperty Name="systemeExploitation" ColumnName="systemeExploitation" />
-                <ScalarProperty Name="tag" ColumnName="tag" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewSystemeExploitation">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewSystemeExploitation">
-              <MappingFragment StoreEntitySet="ViewSystemeExploitation">
-                <ScalarProperty Name="code" ColumnName="code" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-                <ScalarProperty Name="edition" ColumnName="edition" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="tag" ColumnName="tag" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewTheme">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewTheme">
-              <MappingFragment StoreEntitySet="ViewTheme">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nom" ColumnName="nom" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ViewTypePlatforme">
-            <EntityTypeMapping TypeName="TexcelASP_SamNicModel.ViewTypePlatforme">
-              <MappingFragment StoreEntitySet="ViewTypePlatforme">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
               </MappingFragment>

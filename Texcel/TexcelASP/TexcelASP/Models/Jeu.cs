@@ -11,7 +11,6 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     
     public partial class Jeu
     {
@@ -22,9 +21,7 @@ namespace TexcelASP.Models
             this.Jeu2 = new HashSet<Jeu>();
         }
     
-        
         public int id { get; set; }
-        [Display(Name = "Nom")]
         public string nom { get; set; }
         public string description { get; set; }
         public string configMinimal { get; set; }
@@ -33,6 +30,7 @@ namespace TexcelASP.Models
         public int classification { get; set; }
         public int developpeur { get; set; }
         public int platforme { get; set; }
+        public string tag { get; set; }
     
         public virtual Classification Classification1 { get; set; }
         public virtual Developpeur Developpeur1 { get; set; }

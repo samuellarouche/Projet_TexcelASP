@@ -15,6 +15,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nom" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Classification" FromRole="Classification" ToRole="Jeu" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Developpeur">
     <Key>
@@ -23,6 +24,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Developpeur" FromRole="Developpeur" ToRole="Jeu" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Employe">
     <Key>
@@ -38,6 +40,7 @@
     <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="categorieEmploi" Type="Int32" Nullable="false" />
     <NavigationProperty Name="CategorieEmploi1" Relationship="Self.FK_Employe_CategorieEmploi" FromRole="Employe" ToRole="CategorieEmploi" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Equipe">
     <Key>
@@ -61,6 +64,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Genre" FromRole="Genre" ToRole="Jeu" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Jeu">
     <Key>
@@ -82,6 +86,7 @@
     <NavigationProperty Name="Theme1" Relationship="Self.FK_Jeu_Theme" FromRole="Jeu" ToRole="Theme" />
     <NavigationProperty Name="Jeu1" Relationship="Self.JeuAssociee" FromRole="Jeu" ToRole="Jeu1" />
     <NavigationProperty Name="Jeu2" Relationship="Self.JeuAssociee" FromRole="Jeu1" ToRole="Jeu" />
+    <Property Name="tag" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Platforme">
     <Key>
@@ -95,6 +100,7 @@
     <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Platforme" FromRole="Platforme" ToRole="Jeu" />
     <NavigationProperty Name="SystemeExploitation1" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="Platforme" ToRole="SystemeExploitation" />
     <NavigationProperty Name="TypePlatforme1" Relationship="Self.FK_Platforme_TypePlatforme" FromRole="Platforme" ToRole="TypePlatforme" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="ProjetTest">
     <Key>
@@ -112,6 +118,7 @@
     <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Platforme" Relationship="Self.FK_Platforme_SystemeExploitation" FromRole="SystemeExploitation" ToRole="Platforme" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Test">
     <Key>
@@ -128,6 +135,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Jeu" Relationship="Self.FK_Jeu_Theme" FromRole="Theme" ToRole="Jeu" />
+    <Property Name="tag" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TypePlatforme">
     <Key>
@@ -140,113 +148,6 @@
   <EntityType Name="TypeTest">
     <Key>
       <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewDeveloppeur">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewEmploye">
-    <Key>
-      <PropertyRef Name="matricule" />
-      <PropertyRef Name="mdp" />
-      <PropertyRef Name="nom" />
-      <PropertyRef Name="prenom" />
-      <PropertyRef Name="dateNaissance" />
-      <PropertyRef Name="adresse" />
-      <PropertyRef Name="telResidentiel" />
-      <PropertyRef Name="posteTel" />
-      <PropertyRef Name="categorieEmploi" />
-      <PropertyRef Name="tag" />
-    </Key>
-    <Property Name="matricule" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="mdp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="prenom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="dateNaissance" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="telResidentiel" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="posteTel" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="categorieEmploi" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tag" Type="String" MaxLength="193" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewGenre">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewJeu">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
-      <PropertyRef Name="description" />
-      <PropertyRef Name="genre" />
-      <PropertyRef Name="theme" />
-      <PropertyRef Name="classification" />
-      <PropertyRef Name="developpeur" />
-      <PropertyRef Name="platforme" />
-      <PropertyRef Name="tag" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="configMinimal" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="genre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="theme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="classification" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="developpeur" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="platforme" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tag" Type="String" MaxLength="544" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewPlatforme">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
-      <PropertyRef Name="typePlatforme" />
-      <PropertyRef Name="systemeExploitation" />
-      <PropertyRef Name="tag" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="configuration" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="typePlatforme" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="systemeExploitation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tag" Type="String" MaxLength="270" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewSystemeExploitation">
-    <Key>
-      <PropertyRef Name="code" />
-      <PropertyRef Name="nom" />
-      <PropertyRef Name="version" />
-      <PropertyRef Name="tag" />
-    </Key>
-    <Property Name="code" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="edition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="version" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tag" Type="String" MaxLength="71" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewTheme">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ViewTypePlatforme">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="nom" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
@@ -367,14 +268,6 @@
     <EntitySet Name="Theme" EntityType="Self.Theme" />
     <EntitySet Name="TypePlatforme" EntityType="Self.TypePlatforme" />
     <EntitySet Name="TypeTest" EntityType="Self.TypeTest" />
-    <EntitySet Name="ViewDeveloppeur" EntityType="Self.ViewDeveloppeur" />
-    <EntitySet Name="ViewEmploye" EntityType="Self.ViewEmploye" />
-    <EntitySet Name="ViewGenre" EntityType="Self.ViewGenre" />
-    <EntitySet Name="ViewJeu" EntityType="Self.ViewJeu" />
-    <EntitySet Name="ViewPlatforme" EntityType="Self.ViewPlatforme" />
-    <EntitySet Name="ViewSystemeExploitation" EntityType="Self.ViewSystemeExploitation" />
-    <EntitySet Name="ViewTheme" EntityType="Self.ViewTheme" />
-    <EntitySet Name="ViewTypePlatforme" EntityType="Self.ViewTypePlatforme" />
     <AssociationSet Name="FK_Employe_CategorieEmploi" Association="Self.FK_Employe_CategorieEmploi">
       <End Role="CategorieEmploi" EntitySet="CategorieEmploi" />
       <End Role="Employe" EntitySet="Employe" />

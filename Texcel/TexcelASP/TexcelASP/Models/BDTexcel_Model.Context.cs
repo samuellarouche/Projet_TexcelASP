@@ -40,13 +40,5 @@ namespace TexcelASP.Models
         public virtual DbSet<Theme> Theme { get; set; }
         public virtual DbSet<TypePlatforme> TypePlatforme { get; set; }
         public virtual DbSet<TypeTest> TypeTest { get; set; }
-        public virtual DbSet<ViewDeveloppeur> ViewDeveloppeur { get; set; }
-        public virtual DbSet<ViewEmploye> ViewEmploye { get; set; }
-        public virtual DbSet<ViewGenre> ViewGenre { get; set; }
-        public virtual DbSet<ViewJeu> ViewJeu { get; set; }
-        public virtual DbSet<ViewPlatforme> ViewPlatforme { get; set; }
-        public virtual DbSet<ViewSystemeExploitation> ViewSystemeExploitation { get; set; }
-        public virtual DbSet<ViewTheme> ViewTheme { get; set; }
-        public virtual DbSet<ViewTypePlatforme> ViewTypePlatforme { get; set; }
     }
 }

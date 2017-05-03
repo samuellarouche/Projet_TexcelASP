@@ -269,30 +269,6 @@
     <Compile Include="Models\TypeTest.cs">
       <DependentUpon>BDTexcel_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ViewDeveloppeur.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewEmploye.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewGenre.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewJeu.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewPlatforme.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewSystemeExploitation.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewTheme.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ViewTypePlatforme.cs">
-      <DependentUpon>BDTexcel_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
