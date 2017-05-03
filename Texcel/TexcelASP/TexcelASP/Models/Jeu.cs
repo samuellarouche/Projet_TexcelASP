@@ -11,6 +11,7 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Jeu
     {
@@ -22,13 +23,21 @@ namespace TexcelASP.Models
         }
     
         public int id { get; set; }
+        [Display(Name = "Nom")]
         public string nom { get; set; }
+        [Display(Name = "Description")]
         public string description { get; set; }
+        [Display(Name = "Configuration minimale")]
         public string configMinimal { get; set; }
+        [Display(Name = "Genre")]
         public int genre { get; set; }
+        [Display(Name = "Thème")]
         public int theme { get; set; }
+        [Display(Name = "Classification")]
         public int classification { get; set; }
+        [Display(Name = "Développeur")]
         public int developpeur { get; set; }
+        [Display(Name = "Plateforme")]
         public int platforme { get; set; }
         public string tag { get; set; }
     
