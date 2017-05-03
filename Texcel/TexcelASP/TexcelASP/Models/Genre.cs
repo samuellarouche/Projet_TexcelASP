@@ -11,6 +11,7 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Genre
     {
@@ -21,6 +22,7 @@ namespace TexcelASP.Models
         }
     
         public int id { get; set; }
+        [Display(Name = "Genre")]
         public string nom { get; set; }
         public string tag { get; set; }
     
