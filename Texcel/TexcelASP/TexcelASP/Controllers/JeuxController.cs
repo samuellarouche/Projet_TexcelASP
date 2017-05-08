@@ -15,10 +15,13 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Jeux
-        public ActionResult Index()
+        public ActionResult Index(string Rechercher = "")
         {
-            var jeu = db.Jeu.Include(j => j.Classification1).Include(j => j.Developpeur1).Include(j => j.Genre1).Include(j => j.Platforme1).Include(j => j.Theme1);
-            return View(jeu.ToList());
+            var DBJeu = db.Jeu;
+            var Query = from Jeu in DBJeu
+                        where Jeu.tag.Contains(Rechercher)
+                        select Jeu;
+            return View(Query.ToList());
         }
 
         // GET: Jeux/Details/5
@@ -56,6 +59,7 @@ namespace TexcelASP.Controllers
         {
             if (ModelState.IsValid)
             {
+                jeu.tag = jeu.nom + jeu.description + jeu.configMinimal + jeu.genre + jeu.theme + jeu.classification + jeu.developpeur + jeu.platforme;
                 db.Jeu.Add(jeu);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -98,6 +102,7 @@ namespace TexcelASP.Controllers
         {
             if (ModelState.IsValid)
             {
+                jeu.tag = jeu.nom + jeu.description + jeu.configMinimal + jeu.genre + jeu.theme + jeu.classification + jeu.developpeur + jeu.platforme;
                 db.Entry(jeu).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

@@ -1,10 +1,10 @@
 ﻿@model TexcelASP.Models.Jeu
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Créer - Jeu";
 }
 
-<h2>Create</h2>
+<h2>Création</h2>
 
 
 @using (Html.BeginForm()) 
@@ -40,7 +40,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.genre, "genre", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.genre, "Genre", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("genre", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.genre, "", new { @class = "text-danger" })
@@ -48,7 +48,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.theme, "theme", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.theme, "Thème", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("theme", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.theme, "", new { @class = "text-danger" })
@@ -56,7 +56,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.classification, "classification", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.classification, "Classification", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("classification", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.classification, "", new { @class = "text-danger" })
@@ -64,7 +64,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.developpeur, "developpeur", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.developpeur, "Développeur", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("developpeur", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.developpeur, "", new { @class = "text-danger" })
@@ -72,7 +72,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.platforme, "platforme", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.platforme, "Plateforme", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("platforme", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.platforme, "", new { @class = "text-danger" })
@@ -81,14 +81,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Créer" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Retour", "Index")
 </div>
 
 @section Scripts {

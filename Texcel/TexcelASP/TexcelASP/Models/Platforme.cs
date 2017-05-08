@@ -11,6 +11,7 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Platforme
     {
@@ -21,9 +22,13 @@ namespace TexcelASP.Models
         }
     
         public int id { get; set; }
+        [Display(Name = "Plateforme")]
         public string nom { get; set; }
+        [Display(Name = "Configuration")]
         public string configuration { get; set; }
+        [Display(Name = "Type plateforme")]
         public int typePlatforme { get; set; }
+        [Display(Name = "OS")]
         public string systemeExploitation { get; set; }
         public string tag { get; set; }
     
