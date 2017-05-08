@@ -15,10 +15,13 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Platformes
-        public ActionResult Index()
+        public ActionResult Index(string Rechercher = "")
         {
             var platforme = db.Platforme.Include(p => p.SystemeExploitation1).Include(p => p.TypePlatforme1);
-            return View(platforme.ToList());
+			var Query = from Plateforme in platforme
+						where Plateforme.tag.Contains(Rechercher)
+						select Plateforme;
+			return View(Query.ToList());
         }
 
         // GET: Platformes/Details/5
@@ -39,7 +42,7 @@ namespace TexcelASP.Controllers
         // GET: Platformes/Create
         public ActionResult Create()
         {
-            ViewBag.systemeExploitation = new SelectList(db.SystemeExploitation, "code", "nom");
+			ViewBag.systemeExploitation = new SelectList(db.SystemeExploitation, "code", "nom");
             ViewBag.typePlatforme = new SelectList(db.TypePlatforme, "id", "nom");
             return View();
         }
@@ -53,7 +56,8 @@ namespace TexcelASP.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Platforme.Add(platforme);
+				platforme.tag = platforme.id + platforme.nom + platforme.configuration + platforme.typePlatforme + platforme.systemeExploitation;
+				db.Platforme.Add(platforme);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -89,7 +93,8 @@ namespace TexcelASP.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(platforme).State = EntityState.Modified;
+				platforme.tag = platforme.id + platforme.nom + platforme.configuration + platforme.typePlatforme + platforme.systemeExploitation;
+				db.Entry(platforme).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
