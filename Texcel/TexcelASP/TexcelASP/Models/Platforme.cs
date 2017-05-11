@@ -22,14 +22,22 @@ namespace TexcelASP.Models
         }
     
         public int id { get; set; }
+		[Required]
+		[MinLength(1)]
+		[MaxLength(30)]
         [Display(Name = "Plateforme")]
-        public string nom { get; set; }
-        [Display(Name = "Configuration")]
-        public string configuration { get; set; }
+		public string nom { get; set; }
+		[Required]
+		[MinLength(1)]
+		[MaxLength(200)]
+		[Display(Name = "Configuration")]
+		public string configuration { get; set; }
+		[Required]
         [Display(Name = "Type plateforme")]
-        public int typePlatforme { get; set; }
+		public int typePlatforme { get; set; }
+		[Required]
         [Display(Name = "OS")]
-        public string systemeExploitation { get; set; }
+		public string systemeExploitation { get; set; }
         public string tag { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

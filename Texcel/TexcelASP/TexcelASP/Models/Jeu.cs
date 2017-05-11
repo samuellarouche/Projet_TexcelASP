@@ -21,23 +21,39 @@ namespace TexcelASP.Models
             this.Jeu1 = new HashSet<Jeu>();
             this.Jeu2 = new HashSet<Jeu>();
         }
-    
+		
+		
+		
         public int id { get; set; }
-        [Display(Name = "Nom")]
+		[Required]
+		[MinLength(1)]
+		[MaxLength(50)]
+		[Display(Name = "Nom")]
         public string nom { get; set; }
-        [Display(Name = "Description")]
+		[Required]
+		[MinLength(1)]
+		[MaxLength(200)]
+		[Display(Name = "Description")]
         public string description { get; set; }
-        [Display(Name = "Configuration minimale")]
+		[Required]
+		[MinLength(1)]
+		[MaxLength(200)]
+		[Display(Name = "Configuration minimale")]
         public string configMinimal { get; set; }
-        [Display(Name = "Genre")]
+		[Required]
+		[Display(Name = "Genre")]
         public int genre { get; set; }
-        [Display(Name = "Thème")]
+		[Required]
+		[Display(Name = "Thème")]
         public int theme { get; set; }
-        [Display(Name = "Classification")]
+		[Required]
+		[Display(Name = "Classification")]
         public int classification { get; set; }
-        [Display(Name = "Développeur")]
+		[Required]
+		[Display(Name = "Développeur")]
         public int developpeur { get; set; }
-        [Display(Name = "Plateforme")]
+		[Required] 
+		[Display(Name = "Plateforme")]
         public int platforme { get; set; }
         public string tag { get; set; }
     
@@ -50,5 +66,6 @@ namespace TexcelASP.Models
         public virtual ICollection<Jeu> Jeu1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Jeu> Jeu2 { get; set; }
+
     }
 }
