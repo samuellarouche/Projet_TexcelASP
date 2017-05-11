@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<TexcelASP.Models.Platforme>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Index - Plateforme";
 }
 
 <h2>Index</h2>
@@ -21,7 +21,7 @@
             @Html.DisplayNameFor(model => model.configuration)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SystemeExploitation1.nom)
+            @Html.DisplayNameFor(model => model.SystemeExploitation1.code)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.TypePlatforme1.nom)
@@ -38,7 +38,7 @@
             @Html.DisplayFor(modelItem => item.configuration)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.SystemeExploitation1.nom)
+            @Html.DisplayFor(modelItem => item.SystemeExploitation1.code)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TypePlatforme1.nom)

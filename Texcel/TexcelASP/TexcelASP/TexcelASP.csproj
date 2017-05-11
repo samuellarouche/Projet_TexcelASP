@@ -198,11 +198,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClassificationsController.cs" />
+    <Compile Include="Controllers\DeveloppeursController.cs" />
+    <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JeuxController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlatformesController.cs" />
     <Compile Include="Controllers\SystemeExploitationsController.cs" />
+    <Compile Include="Controllers\ThemesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -362,6 +366,26 @@
     <Content Include="Views\Jeux\Details.cshtml" />
     <Content Include="Views\Jeux\Edit.cshtml" />
     <Content Include="Views\Jeux\Index.cshtml" />
+    <Content Include="Views\Themes\Create.cshtml" />
+    <Content Include="Views\Themes\Delete.cshtml" />
+    <Content Include="Views\Themes\Details.cshtml" />
+    <Content Include="Views\Themes\Edit.cshtml" />
+    <Content Include="Views\Themes\Index.cshtml" />
+    <Content Include="Views\Classifications\Create.cshtml" />
+    <Content Include="Views\Classifications\Delete.cshtml" />
+    <Content Include="Views\Classifications\Details.cshtml" />
+    <Content Include="Views\Classifications\Edit.cshtml" />
+    <Content Include="Views\Classifications\Index.cshtml" />
+    <Content Include="Views\Developpeurs\Create.cshtml" />
+    <Content Include="Views\Developpeurs\Delete.cshtml" />
+    <Content Include="Views\Developpeurs\Details.cshtml" />
+    <Content Include="Views\Developpeurs\Edit.cshtml" />
+    <Content Include="Views\Developpeurs\Index.cshtml" />
+    <Content Include="Views\Genres\Create.cshtml" />
+    <Content Include="Views\Genres\Delete.cshtml" />
+    <Content Include="Views\Genres\Details.cshtml" />
+    <Content Include="Views\Genres\Edit.cshtml" />
+    <Content Include="Views\Genres\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

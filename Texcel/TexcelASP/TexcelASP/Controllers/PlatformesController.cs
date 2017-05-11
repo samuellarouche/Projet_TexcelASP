@@ -17,7 +17,7 @@ namespace TexcelASP.Controllers
         // GET: Platformes
         public ActionResult Index(string Rechercher = "")
         {
-            var platforme = db.Platforme.Include(p => p.SystemeExploitation1).Include(p => p.TypePlatforme1);
+            var platforme = db.Platforme;
 			var Query = from Plateforme in platforme
 						where Plateforme.tag.Contains(Rechercher)
 						select Plateforme;
