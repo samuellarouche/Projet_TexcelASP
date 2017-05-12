@@ -6,6 +6,7 @@
 //     Les modifications manuelles apportées à ce fichier sont remplacées si le code est régénéré.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System.ComponentModel.DataAnnotations;
 
 namespace TexcelASP.Models
 {
@@ -15,6 +16,7 @@ namespace TexcelASP.Models
     public partial class Equipe
     {
         public int id { get; set; }
+		[Display(Name = "Chef d'équipe")]
         public int chefEquipe { get; set; }
     }
 }

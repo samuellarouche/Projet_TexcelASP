@@ -1,10 +1,10 @@
 ﻿@model TexcelASP.Models.Theme
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Ajhouter - Thèmes";
 }
 
-<h2>Create</h2>
+<h2>Ajouter</h2>
 
 
 @using (Html.BeginForm()) 
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Theme</h4>
+        <h4>Thèmes</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -40,7 +40,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Retour", "Index")
 </div>
 
 @section Scripts {

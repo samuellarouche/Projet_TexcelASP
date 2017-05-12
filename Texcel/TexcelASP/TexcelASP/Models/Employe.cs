@@ -16,21 +16,42 @@ namespace TexcelASP.Models
     public partial class Employe
     {
         [Display(Name = "Matricule")]
+		[Required]
+		[StringLength(8)]
         public string matricule { get; set; }
-        public string mdp { get; set; }
-        [Display(Name = "Nom")]
-        public string nom { get; set; }
-        [Display(Name = "Prénom")]
-        public string prenom { get; set; }
-        [Display(Name = "Date de naissance")]
+		[Display(Name = "Mot de passe")]
+		[Required]
+		[MinLength(1)]
+		[MaxLength(30)]
+		public string mdp { get; set; }
+		[Required]
+		[Display(Name = "Nom")]
+		[MinLength(1)]
+		[MaxLength(30)]
+		public string nom { get; set; }
+		[Required]
+		[Display(Name = "Prénom")]
+		[MinLength(1)]
+		[MaxLength(30)]
+		public string prenom { get; set; }
+		[Required]
+		[Display(Name = "Date de naissance")]
         public System.DateTime dateNaissance { get; set; }
-        [Display(Name = "Adresse")]
-        public string adresse { get; set; }
-        [Display(Name = "Téléphone")]
-        public string telResidentiel { get; set; }
-        [Display(Name = "Pste téléphonique")]
-        public string posteTel { get; set; }
-        [Display(Name = "Emploi")]
+		[Required]
+		[Display(Name = "Adresse")]
+		[MinLength(1)]
+		[MaxLength(50)]
+		public string adresse { get; set; }
+		[Required]
+		[Display(Name = "Téléphone")]
+		[StringLength(12)]
+		public string telResidentiel { get; set; }
+		[Required]
+		[Display(Name = "Pste téléphonique")]
+		[StringLength(3)]
+		public string posteTel { get; set; }
+		[Required]
+		[Display(Name = "Emploi")]
         public int categorieEmploi { get; set; }
         public string tag { get; set; }
     
