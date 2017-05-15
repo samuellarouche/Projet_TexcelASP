@@ -207,6 +207,7 @@
     <Compile Include="Controllers\JeuxController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlatformesController.cs" />
+    <Compile Include="Controllers\RechercheController.cs" />
     <Compile Include="Controllers\SystemeExploitationsController.cs" />
     <Compile Include="Controllers\ThemesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -393,6 +394,7 @@
     <Content Include="Views\Employes\Details.cshtml" />
     <Content Include="Views\Employes\Edit.cshtml" />
     <Content Include="Views\Employes\Index.cshtml" />
+    <Content Include="Views\Recherche\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

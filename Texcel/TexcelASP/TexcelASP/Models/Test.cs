@@ -11,10 +11,12 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Test
+	using System.ComponentModel.DataAnnotations;
+
+	public partial class Test
     {
         public int id { get; set; }
+		[Display(Name ="Description")]
         public string description { get; set; }
         public int completion { get; set; }
     }

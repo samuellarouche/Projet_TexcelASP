@@ -15,9 +15,14 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Themes
-        public ActionResult Index()
+        public ActionResult Index(string Rechercher="")
         {
-            return View(db.Theme.ToList());
+			var DBTheme = db.Theme;
+			var Query = from Theme in DBTheme
+						where Theme.nom.Contains(Rechercher)
+						select Theme;
+			return View(Query.ToList());
+
         }
 
         // GET: Themes/Details/5

@@ -1,0 +1,199 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Recherche</title>
+</head>
+<body>
+    <h2>RECHERCHE</h2>
+    <p>
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("Rechercher")
+            <input type="submit" value="Rechercher" />
+        }
+    </p>
+
+    <h3>Jeux</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Configuration</th>
+                    <th>Classification</th>
+                    <th>Developpeur</th>
+                    <th>Genre</th>
+                    <th>Plateforme</th>
+                    <th>Theme</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in ViewBag.Jeu)
+            {
+
+                <tr>
+                    <td>@item.nom</td>
+                    <td>@item.description</td>
+                    <td>@item.configMinimal</td>
+                    <td>@item.Classification1.nom</td>
+                    <td>@item.Developpeur1.nom</td>
+                    <td>@item.Genre1.nom</td>
+                    <td>@item.Platforme1.nom</td>
+                    <td>@item.Theme1.nom</td>
+                    <td>
+                        @Html.ActionLink("Modifier", "../Jeux/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Détails", "../Jeux/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Supprimer", "../Jeux/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                    </td>
+                </tr>}
+        </table>
+    </div>
+        
+    <h3>Classification</h3>
+        <div id="" style="overflow-y:scroll; max-height:400px" ;>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                    </tr>
+                </thead>
+
+                @foreach (var item in ViewBag.Classification)
+                {
+                    <tr>
+                        <td>@item.nom</td>
+                        <td>
+                            @Html.ActionLink("Modifier", "../Classifications/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                            @Html.ActionLink("Détails", "../Classifications/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                            @Html.ActionLink("Supprimer", "../Classifications/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                        </td>
+                    </tr>
+
+                }
+            </table>
+        </div>
+
+    <h3>Genre</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.Genre)
+            {
+                <tr>
+                    <td>@item.nom</td>
+                    <td>
+                        @Html.ActionLink("Modifier", "../Genres/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Détails", "../Genres/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Supprimer", "../Genres/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    <h3>Theme</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.Theme)
+            {
+            <tr>
+                <td>@item.nom</td>
+                <td>
+                    @Html.ActionLink("Modifier", "../Themes/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Détails", "../Themes/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Supprimer", "../Themes/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                </td>
+            </tr>
+            }
+        </table>
+    </div>
+
+    <h3>Developpeur</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.Developpeur)
+            {
+                <tr>
+                    <td>@item.nom</td>
+                    <td>
+                        @Html.ActionLink("Modifier", "../Developpeurs/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Détails", "../Developpeurs/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Supprimer", "../Developpeurs/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    <h3>OS</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Edition</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.OS)
+            {
+                <tr>
+                    <td>@item.nom</td>
+                    <td>@item.edition</td>
+                    <td>@item.version</td>
+                    <td>
+                        @Html.ActionLink("Modifier", "../SystemeExploitations/Edit", new { id = item.code }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Détails", "../SystemeExploitations/Details", new { id = item.code }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Supprimer", "../SystemeExploitations/Delete", new { id = item.code }, new { @class = "btn whiteBtn" })
+                    </td>
+                </tr>
+             }
+        </table>
+    </div>
+
+    <h3>Plateforme</h3>
+    <div id="" style="overflow-y:scroll; max-height:400px" ;>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Configuration</th>
+                    <th>Code OS</th>
+                    <th>Type Plateforme</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.Platforme)
+            {
+                <tr>
+                    <td>@item.nom</td>
+                    <td>@item.configuration</td>
+                    <td>@item.systemeExploitation</td>
+                    <td>@item.typePlatforme</td>
+                    <td>
+                        @Html.ActionLink("Modifier", "../Platformes/Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Détails", "../Platformes/Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                        @Html.ActionLink("Supprimer", "../Platformes/Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
