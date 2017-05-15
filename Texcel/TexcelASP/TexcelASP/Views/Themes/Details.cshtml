@@ -1,7 +1,11 @@
 ﻿@model TexcelASP.Models.Theme
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Détails - Thèmes";
+=======
+    ViewBag.Title = "Détails - Themes";
+>>>>>>> Nico
 }
 
 <h2>Détails</h2>
@@ -17,18 +21,14 @@
         <dd>
             @Html.DisplayFor(model => model.nom)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tag)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tag)
-        </dd>
-
     </dl>
 </div>
 <p>
+<<<<<<< HEAD
     @Html.ActionLink("Modifier", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Retour", "Index")
+=======
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.id }, new { @class = "btn whiteBtn" }) |
+    @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
+>>>>>>> Nico
 </p>

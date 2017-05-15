@@ -1,7 +1,11 @@
 ﻿@model TexcelASP.Models.Genre
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Modifier - Genres";
+=======
+    ViewBag.Title = "Midifier - Genres";
+>>>>>>> Nico
 }
 
 <h2>Modifier</h2>
@@ -26,23 +30,19 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.tag, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.tag, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.tag, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="whiteBtn btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
+<<<<<<< HEAD
     @Html.ActionLink("Retour", "Index")
+=======
+    @Html.ActionLink("Genre", "Index", null, new { @class = "btn whiteBtn" })
+>>>>>>> Nico
 </div>
 
 @section Scripts {

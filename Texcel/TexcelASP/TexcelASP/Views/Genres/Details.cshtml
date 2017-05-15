@@ -1,7 +1,11 @@
 ﻿@model TexcelASP.Models.Genre
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Détails";
+=======
+    ViewBag.Title = "Détails - Genres";
+>>>>>>> Nico
 }
 
 <h2>Détails</h2>
@@ -18,17 +22,14 @@
             @Html.DisplayFor(model => model.nom)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.tag)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tag)
-        </dd>
-
     </dl>
 </div>
 <p>
+<<<<<<< HEAD
     @Html.ActionLink("Modifier", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Retour", "Index")
+=======
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.id }, new { @class = "btn whiteBtn" }) |
+    @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
+>>>>>>> Nico
 </p>
