@@ -18,7 +18,7 @@ namespace TexcelASP.Controllers
         public ActionResult Index(string Rechercher = "")
         {
             var DBJeu = db.Jeu;
-            var Query = from Jeu in DBJeu
+            var Query = from Jeu in DBJeu.Include(d => d.Classification1).Include(d => d.Developpeur1).Include(d => d.Genre1).Include(d => d.Theme1).Include(d => d.Platforme1)
                         where Jeu.tag.Contains(Rechercher)
                         select Jeu;
             return View(Query.ToList());

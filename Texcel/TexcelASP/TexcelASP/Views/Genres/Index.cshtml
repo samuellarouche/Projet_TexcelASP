@@ -4,6 +4,8 @@
     ViewBag.Title = "Genres";
 }
 
+@if (Session["matricule"] != null)
+{
 <h2>Genres</h2>
 
 <p>
@@ -29,15 +31,30 @@
                     @Html.DisplayFor(modelItem => item.nom)
                 </td>
                 <td>
-                    @Html.ActionLink("Modifier", "Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
-                    @Html.ActionLink("Détails", "Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
-                    @Html.ActionLink("Supprimer", "Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                    @Html.ActionLink("Détails", "Details", new { id = item.id }, new { @class = "btn whiteBtn" })
                 </td>
+                    @if(Session["categorieEmploi"].ToString() == "Administrateur")
+                    {
+                        <td>
+                            @Html.ActionLink("Modifier", "Edit", new { id = item.id }, new { @class = "btn whiteBtn" })
+                            @Html.ActionLink("Supprimer", "Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                        </td>
+                    }
             </tr>
         }
 
     </table>
 </div>
+if (Session["categorieEmploi"].ToString() == "Administrateur")
+{
     <p>
-        @Html.ActionLink("Nouveau", "Create", null, )
+        @Html.ActionLink("Ajouter", "Create", null, new { @class = "btn whiteBtn" })
     </p>
+}
+}
+else
+{
+<div style="color:red; text-align: center; font-size:large; margin-top: 15%;">
+    <p>Vous n'êtes pas autorisé à accéder à cette page!</p>
+</div>
+}

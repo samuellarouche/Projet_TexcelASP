@@ -21,23 +21,32 @@
                 @Html.ActionLink("Texcel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
-                    <li>
-                        @Html.ActionLink("Jeux", "Index", "Jeux")
-                        <ul class="dropdown">
-                           <li>@Html.ActionLink("Développeurs", "Index", "Developpeurs")</li>
-                           <li>@Html.ActionLink("Thèmes", "Index", "Themes")</li>
-                           <li>@Html.ActionLink("Classifications", "Index", "Classifications")</li>
-                           <li>@Html.ActionLink("Genres", "Index", "Genres")</li>
-                        </ul>
-                    </li>
-                    <li>@Html.ActionLink("Systèmes d'exploitation", "Index", "SystemeExploitations")</li>
-                    <li>@Html.ActionLink("Plateformes", "Index", "Platformes")</li>
+                @if (Session["matricule"] != null)
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
+                        <li>
+                            @Html.ActionLink("Jeux", "Index", "Jeux")
+                            <ul class="dropdown">
+                                <li>@Html.ActionLink("Développeurs", "Index", "Developpeurs")</li>
+                                <li>@Html.ActionLink("Thèmes", "Index", "Themes")</li>
+                                <li>@Html.ActionLink("Classifications", "Index", "Classifications")</li>
+                                <li>@Html.ActionLink("Genres", "Index", "Genres")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Systèmes d'exploitation", "Index", "SystemeExploitations")</li>
+                        <li>@Html.ActionLink("Plateformes", "Index", "Platformes")</li>
+                        @if(Session["categorieEmploi"].ToString() == "Administrateur")
+                        {
+                            <li>@Html.ActionLink("Employés", "Index", "Employes")</li>
+                        }
+
                     
-                </ul>
+                    </ul>
+                }
                 @Html.Partial("_LoginPartial")
             </div>
+    
         </div>
     </div>
     <div class="container body-content">

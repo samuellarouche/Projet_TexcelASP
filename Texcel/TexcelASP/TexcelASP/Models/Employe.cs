@@ -17,6 +17,8 @@ namespace TexcelASP.Models
     {
         [Display(Name = "Matricule")]
         public string matricule { get; set; }
+        [Display(Name = "Mot de passe")]
+        [DataType(DataType.Password)]
         public string mdp { get; set; }
         [Display(Name = "Nom")]
         public string nom { get; set; }
@@ -28,7 +30,7 @@ namespace TexcelASP.Models
         public string adresse { get; set; }
         [Display(Name = "Téléphone")]
         public string telResidentiel { get; set; }
-        [Display(Name = "Pste téléphonique")]
+        [Display(Name = "Poste téléphonique")]
         public string posteTel { get; set; }
         [Display(Name = "Emploi")]
         public int categorieEmploi { get; set; }

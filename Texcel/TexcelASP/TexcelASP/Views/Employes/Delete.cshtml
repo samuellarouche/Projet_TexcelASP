@@ -1,0 +1,88 @@
+﻿@model TexcelASP.Models.Employe
+
+@{
+    ViewBag.Title = "Supprimer";
+}
+
+<h2>Suppression</h2>
+
+<h3>Voulez-vous supprimer ceci?</h3>
+<div>
+    <h4>Employés</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.mdp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mdp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prenom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateNaissance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateNaissance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telResidentiel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telResidentiel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.posteTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.posteTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategorieEmploi1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategorieEmploi1.nom)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Supprimer" class="btn btn-default" /> |
+            @Html.ActionLink("Retour", "Index")
+        </div>
+    }
+</div>
