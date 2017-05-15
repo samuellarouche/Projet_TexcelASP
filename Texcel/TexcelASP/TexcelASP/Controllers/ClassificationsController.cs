@@ -15,10 +15,14 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Classifications
-        public ActionResult Index()
-        {
-            return View(db.Classification.ToList());
-        }
+        public ActionResult Index(string Rechercher = "")
+		{
+			var DBClassification = db.Classification;
+			var Query = from Classification in DBClassification
+						where Classification.nom.Contains(Rechercher)
+						select Classification;
+			return View(Query.ToList());
+		}
 
         // GET: Classifications/Details/5
         public ActionResult Details(int? id)

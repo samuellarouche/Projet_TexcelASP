@@ -15,10 +15,14 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Genres
-        public ActionResult Index()
-        {
-            return View(db.Genre.ToList());
-        }
+        public ActionResult Index(string Rechercher = "")
+		{
+			var DBGenre = db.Genre;
+			var Query = from Genre in DBGenre
+						where Genre.nom.Contains(Rechercher)
+						select Genre;
+			return View(Query.ToList());
+		}
 
         // GET: Genres/Details/5
         public ActionResult Details(int? id)
