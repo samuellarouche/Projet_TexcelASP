@@ -1,10 +1,10 @@
 ﻿@model TexcelASP.Models.Platforme
 
 @{
-    ViewBag.Title = "Détaux - Plateforme";
+    ViewBag.Title = "Détails - Plateforme";
 }
 
-<h2>Détaux</h2>
+<h2>Détails</h2>
 
 <div>
     <h4>Plateforme</h4>
@@ -45,6 +45,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Modifier", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Retour", "Index")
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.id }, new { @class = "btn whiteBtn" }) |
+    @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
 </p>

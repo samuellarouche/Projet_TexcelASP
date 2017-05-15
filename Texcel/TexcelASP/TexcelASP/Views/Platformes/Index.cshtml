@@ -12,46 +12,49 @@
         <input type="submit" value="Rechercher" />
     }
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.nom)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.configuration)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SystemeExploitation1.code)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TypePlatforme1.nom)
-        </th>
-        <th></th>
-    </tr>
+<div class="list-element">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.configuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystemeExploitation1.code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypePlatforme1.nom)
+            </th>
+            <th></th>
+        </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nom)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.configuration)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SystemeExploitation1.code)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TypePlatforme1.nom)
-        </td>
-        <td>
-            @Html.ActionLink("Modifier", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Détails", "Details", new { id=item.id }) |
-            @Html.ActionLink("Supprimer", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.configuration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SystemeExploitation1.code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypePlatforme1.nom)
+                </td>
+                <td>
+                    @Html.ActionLink("Modifier", "Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Détails", "Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Supprimer", "Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                </td>
+            </tr>
+        }
 
-</table>
-<p>
-    @Html.ActionLink("Ajouter", "Create")
-</p>
+    </table>
+</div>
+    <p>
+        @Html.ActionLink("Ajouter", "Create", null, new { @class = "btn whiteBtn" })
+    </p>

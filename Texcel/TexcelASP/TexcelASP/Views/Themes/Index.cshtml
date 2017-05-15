@@ -1,39 +1,42 @@
 ﻿@model IEnumerable<TexcelASP.Models.Theme>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Thème";
 }
 
-<h2>Index</h2>
-
+<h2>Thème</h2>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("Rechercher")
+        <input type="submit" value="Rechercher" />
+    }
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.nom)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tag)
-        </th>
-        <th></th>
-    </tr>
+<div class="list-element">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nom)
+            </th>
+            <th></th>
+        </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nom)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tag)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nom)
+                </td>
+                <td>
+                    @Html.ActionLink("Modifier", "Edit", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Détails", "Details", new { id = item.id }, new { @class = "btn whiteBtn" }) |
+                    @Html.ActionLink("Supprimer", "Delete", new { id = item.id }, new { @class = "btn whiteBtn" })
+                </td>
+            </tr>
+        }
 
-</table>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Nouveau", "Create")
+</p>

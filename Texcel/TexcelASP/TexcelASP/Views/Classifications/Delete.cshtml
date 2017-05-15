@@ -1,10 +1,10 @@
 ﻿@model TexcelASP.Models.Classification
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Supprimer - Classification";
 }
 
-<h2>Delete</h2>
+<h2>Supprimer</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
@@ -19,22 +19,14 @@
             @Html.DisplayFor(model => model.nom)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.tag)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tag)
-        </dd>
-
     </dl>
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Delete" class="whiteBtn btn btn-default" /> |
+            @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
         </div>
     }
 </div>

@@ -299,7 +299,6 @@ C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\T
 C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.dll
 C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.pdb
-C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\bin\ApplicationInsights.config
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\bin\roslyn\csc.exe
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -401,3 +400,4 @@ C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\T
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.dll
 C:\Users\utilisateur\Desktop\Session 4\Programmation 4\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.pdb
+C:\Users\nicbi\Dropbox\Cours\Prog4\FindeSession\Projet\Projet_TexcelASP\Texcel\TexcelASP\TexcelASP\obj\Debug\TexcelASP.csprojResolveAssemblyReference.cache
