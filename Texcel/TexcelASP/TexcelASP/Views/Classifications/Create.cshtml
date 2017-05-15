@@ -4,10 +4,13 @@
     ViewBag.Title = "Création - Classification";
 }
 
+@if (Session["categorieEmploi"].ToString() == "Administrateur")
+{
+
 <h2>Création</h2>
 
 
-@using (Html.BeginForm()) 
+using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
@@ -34,7 +37,13 @@
 <div>
     @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
 </div>
-
+}
+else
+{
+<div style="color:red; text-align: center; font-size:large; margin-top: 15%;">
+    <p>Vous n'êtes pas autorisé à accéder à cette page!</p>
+</div>
+}
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

@@ -11,9 +11,15 @@ namespace TexcelASP.Models
 {
     using System;
     using System.Collections.Generic;
+<<<<<<< HEAD
 	using System.ComponentModel.DataAnnotations;
 
 	public partial class CategorieEmploi
+=======
+    using System.ComponentModel.DataAnnotations;
+    
+    public partial class CategorieEmploi
+>>>>>>> Nico
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CategorieEmploi()
@@ -22,7 +28,11 @@ namespace TexcelASP.Models
         }
     
         public int id { get; set; }
+<<<<<<< HEAD
 		[Display(Name = "Emploie")]
+=======
+        [Display(Name = "Type d'emploi")]
+>>>>>>> Nico
         public string nom { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

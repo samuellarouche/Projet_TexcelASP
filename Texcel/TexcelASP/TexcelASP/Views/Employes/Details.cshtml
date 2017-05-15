@@ -1,0 +1,91 @@
+﻿@model TexcelASP.Models.Employe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.matricule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.matricule)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mdp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mdp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prenom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateNaissance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateNaissance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telResidentiel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telResidentiel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.posteTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.posteTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategorieEmploi1.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategorieEmploi1.nom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.matricule }) |
+    @Html.ActionLink("Retour", "Index")
+</p>

@@ -18,7 +18,12 @@ namespace TexcelASP.Models
         [Display(Name = "Matricule")]
 		[StringLength(8)]
         public string matricule { get; set; }
+<<<<<<< HEAD
 		[RegularExpression("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,18}$")]
+=======
+        [Display(Name = "Mot de passe")]
+        [DataType(DataType.Password)]
+>>>>>>> Nico
         public string mdp { get; set; }
         [Display(Name = "Nom")]
 		[Required]
@@ -39,6 +44,7 @@ namespace TexcelASP.Models
 		[MaxLength(50)]
 		public string adresse { get; set; }
         [Display(Name = "Téléphone")]
+<<<<<<< HEAD
 		[Required]
 		[MinLength(1)]
 		[StringLength(12)]
@@ -49,6 +55,11 @@ namespace TexcelASP.Models
 		[MinLength(1)]
 		[StringLength(3)]
 		public string posteTel { get; set; }
+=======
+        public string telResidentiel { get; set; }
+        [Display(Name = "Poste téléphonique")]
+        public string posteTel { get; set; }
+>>>>>>> Nico
         [Display(Name = "Emploi")]
         public int categorieEmploi { get; set; }
         public string tag { get; set; }

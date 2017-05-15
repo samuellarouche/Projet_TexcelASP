@@ -1,12 +1,12 @@
 ﻿@model TexcelASP.Models.Jeu
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Supprimer - Jeu";
 }
 
-<h2>Delete</h2>
+<h2>Suppression</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Voulez-vous supprimer ce jeu?</h3>
 <div>
     <h4>Jeu</h4>
     <hr />
@@ -81,8 +81,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="whiteBtn btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn whiteBtn" })
+            <input type="submit" value="Supprimer" class="whiteBtn btn btn-default" /> |
+            @Html.ActionLink("Retour", "Index", null, new { @class = "btn whiteBtn" })
         </div>
     }
 </div>

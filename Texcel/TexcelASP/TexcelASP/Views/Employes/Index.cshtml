@@ -1,0 +1,102 @@
+﻿@model IEnumerable<TexcelASP.Models.Employe>
+
+@{
+    ViewBag.Title = "Employé - Index";
+}
+
+@if (Session["categorieEmploi"].ToString() == "Administrateur")
+{
+<h2>Employés</h2>
+
+<p>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("Rechercher")
+        <input type="submit" value="Rechercher" />
+    }
+</p>
+<div class="list-element">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.matricule)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mdp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nom)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.dateNaissance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.adresse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telResidentiel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.posteTel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategorieEmploi1.nom)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.matricule)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mdp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prenom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateNaissance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.adresse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telResidentiel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.posteTel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategorieEmploi1.nom)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Détails", "Details", new { id = item.matricule }, new { @class = "btn whiteBtn" })
+                    @Html.ActionLink("Modifier", "Edit", new { id = item.matricule }, new { @class = "btn whiteBtn" })
+                    @Html.ActionLink("Supprimer", "Delete", new { id = item.matricule }, new { @class = "btn whiteBtn" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Ajouter", "Create", null, new { @class = "btn whiteBtn" })
+</p>
+}
+else
+{
+<div style="color:red; text-align: center; font-size:large; margin-top: 15%;">
+    <p>Vous n'êtes pas autorisé à accéder à cette page!</p>
+</div>
+}
