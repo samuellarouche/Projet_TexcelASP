@@ -23,7 +23,10 @@ namespace TexcelASP.Models
     
         public int id { get; set; }
         [Display(Name = "Genre")]
-        public string nom { get; set; }
+		[Required]
+		[MinLength(1)]
+		[MaxLength(30)]
+		public string nom { get; set; }
         public string tag { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

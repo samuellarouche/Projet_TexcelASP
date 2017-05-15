@@ -14,15 +14,17 @@ namespace TexcelASP.Controllers
     {
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
+		
         // GET: Jeux
         public ActionResult Index(string Rechercher = "")
         {
+			
             var DBJeu = db.Jeu;
             var Query = from Jeu in DBJeu
                         where Jeu.tag.Contains(Rechercher)
                         select Jeu;
             return View(Query.ToList());
-        }
+		}
 
         // GET: Jeux/Details/5
         public ActionResult Details(int? id)

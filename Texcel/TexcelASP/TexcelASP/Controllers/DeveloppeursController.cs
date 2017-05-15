@@ -15,13 +15,17 @@ namespace TexcelASP.Controllers
         private TexcelASP_SamNicEntities db = new TexcelASP_SamNicEntities();
 
         // GET: Developpeurs
-        public ActionResult Index()
-        {
-            return View(db.Developpeur.ToList());
-        }
+        public ActionResult Index(string Rechercher = "")
+		{
+			var DBDeveloppeur = db.Developpeur;
+			var Query = from Developpeur in DBDeveloppeur
+						where Developpeur.nom.Contains(Rechercher)
+						select Developpeur;
+			return View(Query.ToList());
+		}
 
-        // GET: Developpeurs/Details/5
-        public ActionResult Details(int? id)
+		// GET: Developpeurs/Details/5
+		public ActionResult Details(int? id)
         {
             if (id == null)
             {
